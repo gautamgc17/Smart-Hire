@@ -1,0 +1,116 @@
+#container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 700px;
+  min-width:350px;
+  margin:auto;
+  height:100vh;
+
+}
+button {
+  margin: 0 3px 10px 0;
+  padding-left: 2px;
+  padding-right: 2px;
+  width: 99px;
+}
+#question{
+   width: 90%;
+  margin: 20px;
+  font-size: 25px;
+  text-align: center;
+
+}
+#next{
+  display: block;
+    margin: auto;
+    margin-bottom: 20px;
+    height: 35px;
+    padding: 5px;
+    font-size: 15px;
+    max-width: 150px;
+    font-weight: bolder;
+    width: 200px;
+    background-color: rgb(70, 184, 230);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+#next:hover{
+  border-radius: 20px;
+  transform: scale(0.98);
+}
+
+#start{
+  display: block;
+  margin: auto;
+  margin-bottom: 20px;
+  height: 35px;
+  padding: 5px;
+  font-size: 15px;
+  max-width: 150px;
+  font-weight: bolder;
+  width: 400px;
+  background-color: rgb(43, 219, 20);
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+#record{
+  
+  margin: auto;
+  margin-bottom: 20px;
+  height: 35px;
+  padding: 5px;
+  font-size: 17px;
+  width:200px;
+  background-color: rgb(241, 48, 13);
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+
+}
+#record:disabled{
+  background-color: rgb(209, 200, 200);
+  color:white;
+}
+#download{
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin: auto;
+  margin-bottom: 20px;
+  height: 35px;
+  padding: 5px;
+  font-size: 17px;
+  width:200px;
+  background-color: rgb(120, 197, 211);
+}
+#download:active {
+  background-color: #3598e9;
+  box-shadow: 0 4px rgb(8, 49, 126);
+  transform: translateY(4px);
+}
+#download:disabled{
+  background-color: rgb(209, 200, 200);
+  color:white;
+}
+p.borderBelow {
+  margin: 0 0 20px 0;
+  padding: 0 0 20px 0;
+}
+
+video {
+  width:90%;
+  border-radius: 10px;
+}
+
+video:last-of-type {
+  margin: 0 0 20px 0;
+}
+
+video#gumVideo {
+  margin: 0 20px 20px 0;
+}

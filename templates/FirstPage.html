@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Applicant Detail</title>
+    <link rel="shortcut icon" href="../static/user.png" type="image/png">
+    <link rel="stylesheet" href="../static/firstPageStyle.css">
+</head>
+
+<body>
+    {% if reg %}
+        <script>alert("{{ reg }}")</script>
+    {% endif %}
+    <div class="container"> 
+        <!-- Form container -->
+    <div class="heading">
+        <h1>Personality Prediction</h1>
+    </div>
+    <div class="main">
+        <form method="post" action="/prediction" enctype="multipart/form-data">
+            <div id="name">
+                <h3 class="name">Applicant Name</h3>
+                <input placeholder='First Name' class='fname' name='firstname' type="text">
+                
+                <input placeholder='Last Name' class='lname' name='lastname' type="text">
+                
+            </div>
+            
+            <h3 class='name'>Email</h3>
+            <input class='email' name='email' type="email">
+
+            <h3 class='name'>Age</h3>
+            <input class='age' name="age" type="number" step="1", min="18",max="60">
+
+            <h3 class="name">Gender</h3>
+            <label class='radio'>
+                <input type="radio" name='gender' value="male">
+                <span>Male</span>
+            </label>
+            <label class="radio">
+                <input type="radio" name='gender' value="female">
+                <span>Female</span>
+            </label>
+
+            <h3 class="name">Upload Resume</h3>
+            <input class='resume' name='resume' type="file">
+
+            <div class="Qname">
+                <h3 class="question"> Give rating 1 to 10 to following questions </h3>
+            </div>
+
+
+            <p class="Q">enjoy new experince or thing(openness)</p>
+            <input class='ans' type="number" min="0" max="10" step="1" name="openness" placeholder="1-10">
+            <p class="Q">how often you feel negativity(neuroticism)</p>
+            <input class='ans' type="number" min="0" max="10" step="1" name="neuroticism" placeholder="1-10">
+            <p class="Q">wishing to do one's work well and thoroughhly(conscientiousness)</p>
+            <input class='ans' type="number" min="0" max="10" step="1" name="conscientiousness" placeholder="1-10">
+            <p class="Q">how much would you like work with your peers(agreeableness)</p>
+            <input class='ans' type="number" min="0" max="10" step="1" name="agreeableness" placeholder="1-10">
+            <p class="Q">how outgoing and social interaction you like(extraversion)</p>
+            <input class='ans' type="number" min="0" max="10" step="1" name="extraversion" placeholder="1-10">
+
+            <Button type="submit">Submit</Button>
+            
+        </form>
+    </div>
+</div>
+</body>
+
+</html>

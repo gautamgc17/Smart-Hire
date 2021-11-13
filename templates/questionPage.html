@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title> Video Recorder </title>
+    <link rel="shortcut icon" href="../static/analysis.png" type="image/png">
+    <link rel="stylesheet" href="../static/questionPageStyle.css" />
+  </head>
+  <body>
+    <div id="container">
+      <video id="gum" playsinline autoplay muted></video>
+      <div id="question"></div>
+      <div><button id="start">Start camera</button></div>
+      <div id='buttons'>
+        <button id='next' style="display:none;">Next Question</button>
+        <button id="record" disabled>Record</button>
+        <button id="download" disabled>Submit</button>
+      </div>
+
+      <div>
+        <h4>Audio constraints options</h4>
+        <p>
+          Echo cancellation: <input type="checkbox" id="echoCancellation" />
+        </p>
+        <p>
+          Noise Suppression: <input type="checkbox" id="noiseSuppression" />
+        </p>
+        <p>
+         Auto gain control : <input type="checkbox" id="autogaincontrol" />
+        </p>
+      </div>
+
+      <div>
+        <span id="errorMsg"></span>
+      </div>
+      
+    </div>
+  </body>
+  <script src="../static/questionPagescript.js"></script>
+</html>
