@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+    padding: 0;;
+}
+body{
+    background-color:  #ebede7 ;
+}
+.header__box{
+    margin-left: 32px;
+    padding: 10px;
+    border-bottom: 1px solid gainsboro;
+    
+}
+.header__box > h2{
+    color: #1b7bdf;
+}
+.left > a{
+    text-decoration: none;
+    color:#1b7bdf;
+}
+.left > P{
+    margin-bottom: 5px;
+}
+.right > p{
+    margin-bottom: 5px;
+   
+}
+.right > span{
+    color:#1b7bdf;
+}
+.body{
+ margin:auto;
+  padding: 5px;
+  border: 0.5px solid white;
+  width: 500px;
+  margin-top:20px;
+  margin-bottom:20px;
+  
+  border-radius: 10px;
+  background-color: white;
+}
+h3{
+    margin-left: 4px;
+    background-color: white;
+}
+.box1{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    padding: 5px;
+    background-color: white;
+}
+.left{
+    margin-right: 10px;
+    background-color: white;
+}
+.right{
+    margin-left: 10px;
+    margin-right: 10px;
+    background-color: white;
+}
+.right__sidebar{
+    margin-left: 36px;
+    background-color: white;
+}
+.icon{
+    margin-bottom: 14px;
+    background-color: white;
+    color: #71c0e3;
+}
+button{
+    /* position: relative; */
+    top: -49px;
+    left: 5px;
+    outline: none;
+    border: 0.2px solid grey;
+    border-radius: 5px;
+    padding: 3px;
+}
+#white{
+    background-color: white;
+}
+button{
+    outline: none;
+    border:none;
+    background: transparent;
+    cursor: pointer;
+}
+button:hover{
+    transform: scale(0.90);
+}
+textarea{
+    display: none;
+}

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Interview Results</title>
+    <link rel="shortcut icon" href="../static/result.png" type="image/png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../static/resultstyle.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="upper">
+        <div class="images-area">
+          <div class="questionwise">
+            <img src="../static/tone_analysis.jpg" alt="Tone Analysis" />
+            <h2>Tone Analysis</h2>
+          </div>
+
+          <div class="timewise">
+            <img src="../static/fer_output.png" alt="Emotion Analysis" />
+            <h2>Face Emotion Analysis</h2>
+          </div>
+        </div>
+
+        <div class="profile">
+          <div class="card-border">
+            <div class="imageplace">
+              <div
+                class="pic"
+                style="
+                  width: 100px;
+                  height: 100px;
+                  border:2px solid #02BFCB;
+                  border-radius: 100px;
+                  padding:10px;
+                  margin:5px;
+
+                "
+              ><i class="fas fa-user-alt fa-5x" ></i></div>
+              <div class="name-age">
+                {{output['Name']}} <p> {{output['Age']}}</p>    
+              </div>
+            </div>
+            <div class="contact">
+              <div class="mail">
+                <a href="mailto:{{output['Email']}}"><i class="fas fa-envelope"></i></a>
+              </div>
+              <div class="phone">
+                <a href="tel:+{{output['Mobile Number']}}"><i class="fas fa-phone"></i></a>
+              </div>
+            </div>
+            <div class="otherdetails">
+              <div class="row1">
+                <div class="degree">Degree: {{output['Degree']}}</div>
+                <div class="designation">
+                  Designation: {{output['Designation']}}
+                </div>
+              </div>
+              <div class="row2">
+                <div class="experience">
+                  Experience: {{output['Total Experience']}}
+                </div>
+                <div class="personality">
+                  Predicted Personality: {{output['Predicted Personality']}}
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="skill">
+            <h3>Skills</h3>
+            <div id="skillsdiv">{{output['Skills']}}</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="lower">
+        {% if responses %} {% for key , val in responses.items() %}
+        <p class='question'>{{ key }}</p>
+        <p class='answer'>{{val[0]}}</p>
+        <br>
+        {% endfor %} {% endif %}
+        
+      </div>
+    </div>
+    <script>
+      window.onload=function(){
+      let skills=document.querySelector('#skillsdiv').innerHTML;
+      console.log(skills)
+      let newskills=skills.split(', ');
+      skills="";
+      console.log(skills)
+      newskills.forEach(skill=>{
+        let toappend=`<span>${skill}</span> `;
+        skills=skills+toappend;
+      })
+      console.log(skills)
+      document.querySelector('#skillsdiv').innerHTML=skills;
+      console.log(document.querySelector('#skillsdiv').innerHTML)
+      console.log(newskills);
+    }
+    </script>
+  </body>
+</html>
