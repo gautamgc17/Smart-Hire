@@ -1,0 +1,150 @@
+
+.container{
+    display: grid;
+    grid-template-rows: auto;
+    /* grid-gap: 20px; */
+    /* height: 100vh; */
+    /* overflow: hidden; */
+    margin:10px;
+    border-radius: 20px;
+}
+.upper{
+    display: grid;
+    grid-template-columns: 11fr 4fr;
+}
+
+.images-area{
+    height:480px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    width:100%;
+    scrollbar-width: none;
+}
+.images-area::-webkit-scrollbar {
+    display: none; /* for Chrome, Safari, and Opera */
+  }
+.images-area .questionwise{
+    position: relative;
+    width:95%;
+    text-align: center;
+    border:3px solid red;
+    padding: 0;
+    margin:auto;
+    overflow: none;
+    height: 460px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+.images-area .questionwise h2{
+    position: relative;
+    top:-30px;
+}
+.images-area .questionwise img{
+    position: relative;
+    /* top:20px;
+    left:0px; */
+    padding:0;
+    width:auto;
+    height:380px;
+    margin:10px;
+}
+.images-area .timewise{
+    position:relative;
+    width:95%;
+    text-align: center;
+    border:3px solid red;
+    overflow: hidden;
+    margin:auto;
+    height: 90%;
+    padding:0;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+.images-area .timewise img{
+    position: relative;
+    top:10px;
+    left:-105px;
+    height: 85%;
+    width: 120%;
+}
+
+.profile{
+    height:100%;
+}
+.card-border{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width:100%;
+}
+.name-age{
+    text-transform:uppercase;
+    margin:2px;
+}
+.question{
+    color:red;
+    margin:10px;
+    font-weight: bold;
+}
+.answer{
+    margin-left: 10px;
+}
+p{
+    margin:2px;
+}
+.contact{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    align-items: baseline;
+    width:100%;
+}
+.otherdetails{
+    display: flex;
+    flex-direction: column;
+    width:100%;
+    margin:2px;
+    color:#02BFCB;
+}
+.otherdetails .row1{
+    width:100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin:2px;
+    width:100%;
+}
+.otherdetails .row2{
+    width:100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin:2px;
+    width:100%;
+}
+.profile{
+    color:white;
+    background-color: #231E39;
+    padding: 10px;
+}
+/* 
+LOWER */
+.lower{
+    color:white;
+    padding: 10px;
+    background-color:#231E39;
+    font-size: 18px;
+    border-radius: 20px;
+    /* max-height: 1000px; */
+   
+    
+}
+span{
+    display: inline-flex;
+    margin:2px;
+    padding:4px;
+    border:3px solid #033a5f;
+    border-radius: 5px;
+}
