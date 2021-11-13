@@ -1,0 +1,19 @@
+numpy
+scipy
+pandas
+matplotlib
+seaborn
+scikit-learn
+opencv-python
+Flask
+Flask-Mail
+flask-mysqldb
+boto3
+ibm_watson
+python-dotenv
+python-decouple
+nltk
+spacy == 2.3.5
+tensorflow
+fer
+pyresparser
