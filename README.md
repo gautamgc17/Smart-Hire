@@ -1,6 +1,6 @@
 # Introduction
 
-__SMART HIRE__ : a project made for HackUiet-Hackathon with an aim to automate the interview process.
+__SMART HIRE__ : a project made for "HackUIET" Hackathon with an aim to automate the interview process.
 
 ## Objective
 
@@ -24,11 +24,11 @@ __SMART HIRE__ : a project made for HackUiet-Hackathon with an aim to automate t
 
 <br>
 
-_Though most of the features has been added, yet the complete process is not yet automated as this application is made for HackUiet Hackathon. As of now, the application can be used to store the results of multiple users in mysql server, however sending of mail and candidate profile summary/dashboard can only be generated/viewed for a single user i.e, [topmost user](#Track-candidates)._
-
-
+_Though most of the features has been added, yet the complete process is not yet automated as this application is made for HackUIET Hackathon. As of now, the application can be used to store the results of multiple users in mysql server, however sending of mail and candidate profile summary/dashboard can only be generated/viewed for a single user i.e, [topmost user](#Track-candidates)._
 
 <br>
+
+# Video Link demonstrating project workflow:  
 
 # Installation Guide
 This project requires the following tools to get started:
@@ -164,7 +164,7 @@ company_mail = ""
 company_pswd = ""
 ```
 
-Or, you can simply duplicate the .env.sample file and just insert your credentials.
+_Or, you can simply duplicate the .env.sample file and just insert your credentials._
 
 
 __So, basically your project structure would look like:__
