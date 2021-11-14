@@ -4,12 +4,13 @@ __SMART HIRE__ : a project made for "HackUIET" Hackathon with an aim to automate
 
 ## Objective
 
-- Automate the hiring process
+- Application to automate the hiring process
 - Personality prediction using ML
 - Check confidence and other traits using video and tone analysis
 - Send mail to selected/rejected candidates automatically in one-click
-- Fast recruitment
+- Fast recruitment in larger numbers
 - Generate concise insights and provide summary of the candidate's profile
+- Handy application for HR/Recruiting Team
 
 ## Project Workflow
 - Interviewee
@@ -17,19 +18,20 @@ __SMART HIRE__ : a project made for "HackUIET" Hackathon with an aim to automate
      - Personality prediction (based on [Big Five Personality Traits](https://www.thomas.co/resources/type/hr-guides/what-are-big-5-personality-traits) model) with OCEAN values and CV analysis
      - Video recording in browser. The candidate has to answer few questions put up by the HR team on the portal.
      - Face emotion and Speech Analysis to get insights like confidence level, candidate personality traits
+     
 - Interviewer/HR team/Admin
      - View all the registered candidates’ details
      - View each candidate's profile summary which includes resume, responses to questions, technical skills, personality traits, video and tone analysis result.
      - Update candidate about selection/rejection, further interview process using one-click mail or phone call
+
+## Video Link
+[Project Demonstration](https://drive.google.com/drive/folders/1D5i3sphhTIIBBlRkfxhkuGK2vdK1NoXm?usp=sharing)
 
 <br>
 
 _Though most of the features has been added, yet the complete process is not yet automated as this application is made for HackUIET Hackathon. As of now, the application can be used to store the results of multiple users in mysql server, however sending of mail and candidate profile summary/dashboard can only be generated/viewed for a single user i.e, [topmost user](#Track-candidates)._
 
 <br>
-
-## Video Link
-[Project Demonstration]()
 
 # Installation Guide
 This project requires the following tools to get started:
