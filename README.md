@@ -131,6 +131,8 @@ In the same directory, create a local environment file
 
 To get help on how to Set and Get Environment Variables in Python, visit [here](https://able.bio/rhett/how-to-set-and-get-environment-variables-in-python--274rgt5).
 
+_Now You have to simply duplicate the __.env.sample__ file and just insert your credentials._
+
 In the file _.env_ , 
 - store your aws credentials i.e aws region, unique bucket name, language code, aws access key id and secret key in following variables:
 
@@ -168,8 +170,6 @@ company_mail = ""
 company_pswd = ""
 ```
 <br>
-
-_Or, you can simply duplicate the .env.sample file and just insert your credentials._
 
 
 __So, basically your project structure would look like:__
