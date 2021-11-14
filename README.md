@@ -52,7 +52,7 @@ Also, create an AWS Free Tier account, if you don't have it. Services like Amazo
 
 ```
 $ git clone https://github.com/gautamgc17/smart-hire
-$ cd smart-hiring
+$ cd smart-hire
 ```
 
 **Step 2. Create a Virtual Environment and install Dependencies.**
@@ -110,7 +110,8 @@ DESCRIBE candidates;
 - Go to _IAM dashboard_, add a new User. Then click on add permissions and grant the following two permissions - _AmazonTranscribeFullAccess_ and _AmazonS3FullAccess_.
 - Then under Security Credentials, click on _Create access key_ to get your credentials i.e,  'aws_access_key_id' and 'aws_secret_access_key'.
 
-![s3-bucket](screenshots/s3.PNG)
+![s3-bucket](screenshots/s3.png)
+
 
 **Step 5. Setting up IBM Watson for tone analysis**
 - Go to [IBM Cloud catalog](https://cloud.ibm.com/catalog), under category choose _AI / Machine Learning_. Then choose _Tone Analyzer_ service.
@@ -166,6 +167,7 @@ mail_pwd = ""
 company_mail = ""
 company_pswd = ""
 ```
+<br>
 
 _Or, you can simply duplicate the .env.sample file and just insert your credentials._
 
