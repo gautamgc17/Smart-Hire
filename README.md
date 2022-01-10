@@ -237,5 +237,13 @@ __To know more about how to set up a flask application on Windows, MacOS or Linu
 
 ![email](screenshots/email.PNG)
 
+<br>
+
+# Certificates
+
+![certificate](screenshots/certificate2.png)
+
+![cert](screenshots/certificate.png)
+
 
 
