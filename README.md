@@ -27,6 +27,10 @@ __SMART HIRE__ : a project made for "HackUIET" Hackathon with an aim to automate
 ## Video Link
 [Project Demonstration](https://drive.google.com/drive/folders/1D5i3sphhTIIBBlRkfxhkuGK2vdK1NoXm?usp=sharing)
 
+## Presentation Slides
+[Presentation Link](https://docs.google.com/presentation/d/1L1slU4owXQ5fTBK6zP6kCrpBuiCoABMF/edit#slide=id.p1)
+
+
 <br>
 
 _Though most of the features has been added, yet the complete process is not yet automated as this application is made for HackUIET Hackathon. As of now, the application can be used to store the results of multiple users in mysql server, however sending of mail and candidate profile summary/dashboard can only be generated/viewed for a single user i.e, [topmost user](#Track-candidates)._
