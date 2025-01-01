@@ -1,6 +1,6 @@
-# Introduction
+# Project Description
 
-__SMART HIRE__ : a project made for "HackUIET" Hackathon with an aim to automate the interview process.
+__SMART HIRE__ : An application made for "HackUIET" Hackathon with an aim to automate the interview process.
 
 ## Objective
 
